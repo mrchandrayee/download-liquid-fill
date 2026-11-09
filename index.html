@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050d1a">
+  <!-- Primary SEO -->
+  <title>Download Button — Liquid Fill Animation | mrchandrayee</title>
+  <meta name="description" content="A mesmerizing download button with liquid fill progress animation effect. Pure HTML, CSS & JavaScript.">
+  <meta name="author" content="mrchandrayee">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mrchandrayee.github.io/download-liquid-fill/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mrchandrayee.github.io/download-liquid-fill/">
+  <meta property="og:title" content="Download Button — Liquid Fill Animation | mrchandrayee">
+  <meta property="og:description" content="A mesmerizing download button with liquid fill progress animation effect. Pure HTML, CSS & JavaScript.">
+  <meta property="og:image" content="https://mrchandrayee.github.io/download-liquid-fill/preview.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mrchandrayee.github.io/download-liquid-fill/">
+  <meta name="twitter:title" content="Download Button — Liquid Fill Animation | mrchandrayee">
+  <meta name="twitter:description" content="A mesmerizing download button with liquid fill progress animation effect. Pure HTML, CSS & JavaScript.">
+  <meta name="twitter:image" content="https://mrchandrayee.github.io/download-liquid-fill/preview.png">
+  <meta name="twitter:creator" content="@mrchandrayee">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Download Button — Liquid Fill Animation",
+    "description": "A mesmerizing download button with liquid fill progress animation effect. Pure HTML, CSS & JavaScript.",
+    "url": "https://mrchandrayee.github.io/download-liquid-fill/",
+    "author": { "@type": "Person", "name": "mrchandrayee", "url": "https://github.com/mrchandrayee" },
+    "applicationCategory": "WebApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <meta name="theme-color" content="#090b12">
+  
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <main class="page">
+    <header class="heading">
+      <p class="eyebrow">MICRO-INTERACTION STUDY</p>
+      <h1>Download Button</h1>
+      <h2>Liquid Fill Animation</h2>
+      <p class="intro">Three download controls. One satisfying liquid progress effect.</p>
+    </header>
+
+    <section class="demo" aria-label="Download button demos">
+      <div class="demo-row">
+        <button class="brim brim--primary" data-download="primary" type="button">
+          <span class="brim__label">
+            <span data-label="idle">Download</span>
+            <span data-label="work">Downloading</span>
+            <span data-label="done">Open file</span>
+          </span>
+          <span class="brim__well" aria-hidden="true">
+            <span class="brim__liquid"><span class="brim__fill"></span></span>
+            <span class="brim__stream"></span>
+          </span>
+          <svg class="brim__arrow" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M16 4v18M8 15l8 8 8-8M6 27h20" />
+          </svg>
+          <svg class="brim__check" viewBox="0 0 32 32" aria-hidden="true"><path d="m6 17 7 7L27 9"/></svg>
+        </button>
+        <button class="icon-download" data-download="icon" type="button" aria-label="Download file">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4v18M8 15l8 8 8-8M6 27h20"/></svg>
+        </button>
+      </div>
+
+      <div class="demo-row demo-row--second">
+        <button class="square-download" data-download="square" type="button" aria-label="Download file">
+          <svg class="square-arrow" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4v18M8 15l8 8 8-8"/></svg>
+          <span class="square-liquid"><span></span></span>
+          <svg class="square-check" viewBox="0 0 32 32" aria-hidden="true"><path d="m6 17 7 7L27 9"/></svg>
+        </button>
+        <button class="brim brim--dark" data-download="wide" type="button">
+          <span class="brim__label">
+            <span data-label="idle">Download</span>
+            <span data-label="work">Downloading</span>
+            <span data-label="done">Open file</span>
+          </span>
+          <span class="brim__well" aria-hidden="true">
+            <span class="brim__liquid"><span class="brim__fill"></span></span>
+            <span class="brim__stream"></span>
+          </span>
+          <svg class="brim__arrow" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4v18M8 15l8 8 8-8M6 27h20"/></svg>
+          <svg class="brim__check" viewBox="0 0 32 32" aria-hidden="true"><path d="m6 17 7 7L27 9"/></svg>
+        </button>
+      </div>
+      <p class="hint" id="hint" aria-live="polite">Click any button to replay the liquid fill.</p>
+    </section>
+
+    <footer>HTML <span>·</span> CSS <span>·</span> JavaScript <span>—</span> No libraries required</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
